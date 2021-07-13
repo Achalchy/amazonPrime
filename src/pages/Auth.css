@@ -1,0 +1,99 @@
+.signIn {
+  color: #000;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.head {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signInImage {
+  height: 100px;
+  object-fit: contain;
+}
+
+.area {
+  width: 20%;
+  height: 60vh;
+  padding: 20px;
+  border: 1px solid #b3aaaa86;
+  border-radius: 10px;
+}
+
+.area > h1 {
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.area form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#mail {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid rgba(134, 133, 133, 0.534);
+  outline: none;
+  border-radius: 3px;
+}
+#secret {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid rgba(134, 133, 133, 0.534);
+  outline: none;
+  border-radius: 3px;
+}
+
+#mail:focus {
+  box-shadow: 0px 2px 5px #eebc3c, 0px 2px 5px #eebc3c, 0px 2px 2px #eebc3c,
+    0px 2px 12px #eebc3c;
+  border: 1px solid rgba(255, 153, 105, 0.534);
+}
+
+#secret:focus {
+  box-shadow: 0px 2px 1px #eebc3c, 0px 2px 1px #eebc3c, 0px 2px 2px #eebc3c,
+    0px 2px 1px #eebc3c;
+  border: 1px solid rgba(255, 149, 27, 0.534);
+}
+
+.loginBtn {
+  background-color: #eebb3cd7;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.signupBtn {
+  width: 70%;
+  margin-top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.534);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.signupBtn:hover {
+  background-color: #eebb3cc7;
+}
+
+.loginBtn:hover {
+  background-color: #eebb3c;
+}
+
+.area_down {
+  margin-top: 100px;
+  margin-left: 50px;
+}

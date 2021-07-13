@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-color: #171717;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  color: #f3f3f3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a242e;
+  padding-left: 30px;
+  padding-right: 40px;
+  box-shadow: 0px 2px 25px #040404, 0px 57px 54px #000;
+}
+.leftHeader {
+  height: 100%;
+  flex: 0.3;
+}
+.leftHeader > img {
+  /* width: 150px; */
+  height: 70px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.rightHeader {
+  flex: 0.2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.language > h2 {
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 1px;
+  margin-right: 4px;
+}
+
+.links {
+  margin-left: 10px;
+}
+
+.links > a {
+  text-decoration: none;
+  color: #f3f3f3;
+  font-weight: 600;
+}
+
+/* Banner>>>>>>>>>>> */
+.banner {
+  width: 100%;
+  object-fit: contain;
+  height: 70vh;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 25px #040404, 0px 27px 54px #000;
+}
+
+.banner > img {
+  height: 100%;
+  width: 100%;
+}
+
+.bannerInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 35%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 50px;
   flex-direction: column;
+}
+
+.bannerInfoRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 35%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 50px;
+  flex-direction: column;
+}
+
+.bannerText {
+  margin-bottom: 35px;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #fff;
+}
+.bannerText2 {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.bannerInfo .button {
+  width: 50%;
+  height: 50px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 40px;
+  background-color: #0f79af;
+}
+/* .bannerInfoRight > h1 {
+  margin-bottom: 35px;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 500;
+}
+.bannerInfoRight > p {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: #fff;
+} */
+.bannerInfoRight .button {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 40px;
+  background-color: #0f79af;
 }
 
-.App-link {
-  color: #61dafb;
+.facility {
+  width: 100%;
+  object-fit: contain;
+  height: 70vh;
+  background-color: #fff;
+  box-shadow: 0px 2px 25px #040404, 27px 27px 54px #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.facilityItems {
+  width: 30%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.facilityItems > h1,
+p {
+  color: #000;
+  margin-top: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  background-color: #1a242e;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.footerImage > img {
+  height: 70px;
+  object-fit: contain;
+}
+
+.footerInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.footerInfo > p {
+  color: #f3f3f3;
+  font-size: 14px;
+}
+.footerInfo > a {
+  text-decoration: none;
+  color: #0f79af;
+  font-size: 15px;
 }
